@@ -36,7 +36,7 @@ import net.minecraftforge.registries.IForgeRegistry;
 @ObjectHolder("etheric")
 public class RegistryManager {
 	
-	public static final Block celestial_stone = null, rift = null, pipe = null;
+	public static final Block celestial_stone = null, pump = null, rift = null, pipe = null;
 	public static final Block creative_tank = null, test_tank = null;
 	public static final Item seeing_stone = null;
 	
@@ -44,6 +44,7 @@ public class RegistryManager {
 	public static void registerBlocks(RegistryEvent.Register<Block> event) {
 		
 		event.getRegistry().register(new BlockBase("celestial_stone").setHardness(5F).setResistance(1000.0F));
+		event.getRegistry().register(new BlockBase("pump"));
 		event.getRegistry().register(new BlockRift("rift"));
 		event.getRegistry().register(new BlockPipe("pipe"));
 		
@@ -61,6 +62,7 @@ public class RegistryManager {
 	public static void registerItemBlocks(RegistryEvent.Register<Item> event) {
 		
 		registerItemBlock(event.getRegistry(), celestial_stone);
+		registerItemBlock(event.getRegistry(), pump);
 		registerItemBlock(event.getRegistry(), rift);
 		registerItemBlock(event.getRegistry(), pipe);
 		
@@ -80,6 +82,7 @@ public class RegistryManager {
     public static void setupModels(ModelRegistryEvent event) {
 		
 		registerBlockModel(celestial_stone);
+		registerBlockModel(pump);
 		registerBlockModel(rift);
 		registerItemModel(seeing_stone);
 		
