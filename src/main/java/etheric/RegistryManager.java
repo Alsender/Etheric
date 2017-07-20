@@ -72,7 +72,6 @@ public class RegistryManager {
 		
 		registerItemBlock(event.getRegistry(), lodestone_ore);
 		registerItemBlock(event.getRegistry(), celestial_stone);
-		registerItemBlock(event.getRegistry(), pump);
 		registerItemBlock(event.getRegistry(), rift);
 		registerItemBlock(event.getRegistry(), pipe);
 		
@@ -94,7 +93,6 @@ public class RegistryManager {
 		
 		registerBlockModel(lodestone_ore);
 		registerBlockModel(celestial_stone);
-		registerBlockModel(pump);
 		registerBlockModel(rift);
 		registerBlockModel(pipe);
 		
